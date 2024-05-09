@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header{
+    grid-area: header;
+    text-align: center;
+    background-color: hsla(236, 42%, 46%, 0.5);
+}
+aside{
+    grid-area: aside;
+}
+
+aside ul{
+    margin-left: 30px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+aside ul li{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+h3{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+main{
+    grid-area: main;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cards .producto1,.producto2,.producto3,.producto4{
+    border: 1px solid hsla(0, 0%, 0%, 0.08);
+}
+
+h4{
+    font-weight: bold;
+}
+
+.price{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.buy{
+    background-color: hsla(236, 42%, 46%, 0.692);
+    color: white;
+    font-weight: bold;
+}
+.producto1 div{
+    background-image: url("../img/mykingdom.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10em;
+}
+.producto2 div{
+    background-image: url("../img/phantom.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10em;
+}
+.producto3 div{
+    background-image: url("../img/docker.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10em;
+}
+.producto4 div{
+    background-image: url("../img/puma.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10em;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: hsla(236, 42%, 46%, 0.3);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+}
